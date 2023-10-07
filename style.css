@@ -1,0 +1,23 @@
+@font-face {
+        font-family: "clock";
+        src: url(font/Digital7Mono-Yz9J4.ttf);
+      }
+
+
+
+
+
+body {
+  font-family: clock;
+  background: black;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+#clock{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 15rem;
+}
