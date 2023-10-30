@@ -12,7 +12,11 @@ body {
   background: black;
   color: white;
   text-align: center;
-  overflow: hidden;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 #clock{
