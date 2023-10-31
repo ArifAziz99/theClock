@@ -8,7 +8,7 @@
 "orientation" : "protrait",
  "icons": [
     {
-      "src": "/alarm-clock.png",
+      "src": " alarm-clock.svg",
       "type": "image/svg+xml",
       "sizes": "512x512"
     }
