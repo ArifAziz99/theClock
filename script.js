@@ -21,7 +21,7 @@ setInterval( setTime , 1000);
 setTime();
 
 if ('serviceWorker' in navigator){
-navigator.serviceWorker.register('/sw.json');
+navigator.serviceWorker.register('/sw.js');
 }
 
 

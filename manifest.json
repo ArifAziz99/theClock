@@ -1,0 +1,16 @@
+{
+"name" : "clokc",
+"start_url" : "/?home=true",
+"icons" : [],
+"theme_color" : "#00000",
+"background_color" : "#FFFFFF",
+"display" : "fullscreen",
+"orientation" : "protrait",
+ "icons": [
+    {
+      "src": "/images/alarm-clock.png",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+ ]
+}
