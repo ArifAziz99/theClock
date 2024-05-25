@@ -25,6 +25,19 @@ navigator.serviceWorker.register('/sw.js');
 }
 
 
+let colorInput = document.getElementById('colorInput');
+colorInput.addEventListener('input', () =>{
+  document.body.style.backgroundColor = colorInput.value;
+});
+
+
+
+
+
+
+
+
+
 /*function currentTime() {
   let date = new Date(); 
   let hh = date.getHours();
