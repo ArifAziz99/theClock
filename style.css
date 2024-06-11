@@ -1,14 +1,226 @@
 @font-face {
-        font-family: "clock";
-        src: url(font/Digital7Mono-Yz9J4.ttf);
-      }
-
-
-
+  font-family: "Azonix";
+  src: url(font/Azonix.otf);
+}
+@font-face {
+  font-family: "TrenchThin";
+  src: url(font/TrenchThin.ttf);
+}
+@font-face {
+  font-family: "Digital7Mono";
+  src: url(font/Digital7Mono.ttf);
+}
+@font-face {
+  font-family: "OrdinaryLove";
+  src: url(font/OrdinaryLove.ttf);
+}
+@font-face {
+  font-family: "PegHoles";
+  src: url(font/PegHoles.ttf);
+}
+@font-face {
+  font-family: "chintzy";
+  src: url(font/chintzy.ttf);
+}
+@font-face {
+  font-family: "chintzys";
+  src: url(font/chintzys.ttf);
+}
+@font-face {
+  font-family: "DOTMATRI";
+  src: url(font/DOTMATRI.TTF);
+}
+@font-face {
+  font-family: "DOTMBold";
+  src: url(font/DOTMBold.TTF);
+}
+@font-face {
+  font-family: "DS-DIGIB";
+  src: url(font/DS-DIGIB.TTF);
+}
+@font-face {
+  font-family: "DS-DIGI";
+  src: url(font/DS-DIGI.TTF);
+}
+@font-face {
+  font-family: "MINECRAFTPE";
+  src: url(font/MINECRAFT\ PE.ttf);
+}
+@font-face {
+  font-family: "Sparks";
+  src: url(font/Sparks.ttf);
+}
+@font-face {
+  font-family: "Okesip";
+  src: url(font/Okesip.otf);
+}
+@font-face {
+  font-family: "Roller";
+  src: url(font/Roller.ttf);
+}
+@font-face {
+  font-family: "Sextape";
+  src: url(font/Sextape.ttf);
+}
+@font-face {
+  font-family: "RitaOfCascia";
+  src: url(font/RitaOfCascia.ttf);
+}
+@font-face {
+  font-family: "Mockery";
+  src: url(font/Mockery.ttf);
+}
+@font-face {
+  font-family: "HocusPocusFilled";
+  src: url(font/HocusPocusFilled.ttf);
+}
+@font-face {
+  font-family: "HocusPocusHollow";
+  src: url(font/HocusPocusHollow.ttf);
+}
+@font-face {
+  font-family: "HocusPocus";
+  src: url(font/HocusPocus.ttf);
+}
+@font-face {
+  font-family: "Storycan";
+  src: url(font/Storycan.otf);
+}
+@font-face {
+  font-family: "Showthat";
+  src: url(font/Showthat.otf);
+}
+@font-face {
+  font-family: "BroshkLime";
+  src: url(font/BroshkLime.ttf);
+}
+@font-face {
+  font-family: "Pasti";
+  src: url(font/Pasti.otf);
+}
+@font-face {
+  font-family: "Library3am";
+  src: url(font/Library3am.otf);
+}
+@font-face {
+  font-family: "DigitaltsLime";
+  src: url(font/DigitaltsLime.ttf);
+}
+@font-face {
+  font-family: "Digitaltech";
+  src: url(font/Digitaltech.otf);
+}
+@font-face {
+  font-family: "azonix";
+  src: url(font/Azonix);
+}
+@font-face {
+  font-family: "InflammableAge";
+  src: url(font/InflammableAge.otf);
+}
+@font-face {
+  font-family: "DignityofLabour";
+  src: url(font/DignityofLabour.otf);
+}
+@font-face {
+  font-family: "Minisystem";
+  src: url(font/Minisystem.otf);
+}
+@font-face {
+  font-family: "HokjesgeestCubeLeft";
+  src: url(font/HokjesgeestCubeLeft.otf);
+}
+@font-face {
+  font-family: "HokjesgeestCubeRight";
+  src: url(font/HokjesgeestCubeRight.otf);
+}
+@font-face {
+  font-family: "McGareyRegular";
+  src: url(font/McGareyRegular.ttf);
+}
+@font-face {
+  font-family: "Oslo";
+  src: url(font/Oslo.ttf);
+}
+@font-face {
+  font-family: "Oslo_Bold";
+  src: url(font/Oslo_Bold.ttf);
+}
+@font-face {
+  font-family: "Segment14";
+  src: url(font/Segment14.otf);
+}
+@font-face {
+  font-family: "ninepin";
+  src: url(font/ninepin.ttf);
+}
+@font-face {
+  font-family: "HartingPlain";
+  src: url(font/HartingPlain.ttf);
+}
+@font-face {
+  font-family: "LCD14";
+  src: url(font/LCD14.otf);
+}
+@font-face {
+  font-family: "Taurus-Mono-Outline";
+  src: url(font/Taurus-Mono-Outline.otf);
+}
+@font-face {
+  font-family: "AmericanStencil";
+  src: url(font/AmericanStencil.otf);
+}
+@font-face {
+  font-family: "software_tester_7";
+  src: url(font/software_tester_7.ttf);
+}
+@font-face {
+  font-family: "Dotrice";
+  src: url(font/Dotrice.otf);
+}
+@font-face {
+  font-family: "repet";
+  src: url(font/repet.ttf);
+}
+@font-face {
+  font-family: "UbuntuMono-R";
+  src: url(font/UbuntuMono-R.ttf);
+}
+@font-face {
+  font-family: "gabriele-d";
+  src: url(font/gabriele-d.ttf);
+}
+@font-face {
+  font-family: "zig";
+  src: url(font/zig.ttf);
+}
+@font-face {
+  font-family: "origa";
+  src: url(font/origa.ttf);
+}
+@font-face {
+  font-family: "origap";
+  src: url(font/origap.ttf);
+}
+@font-face {
+  font-family: "micrenc";
+  src: url(font/micrenc.ttf);
+}
+@font-face {
+  font-family: "saxmono";
+  src: url(font/saxmono.ttf);
+}
+@font-face {
+  font-family: "Hack";
+  src: url(font/Hack.ttf);
+}
+@font-face {
+  font-family: "FiraMono";
+  src: url(font/FiraMono.otf);
+}
 
 
 body {
-  font-family: clock;
   background: black;
   color: white;
   text-align: center;
@@ -19,9 +231,29 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-#clock{
+#clock {
   height: 100vh;
   display: grid;
   place-items: center;
-  font-size: 10rem;
+  font-size: 7rem;
+
+}
+
+.fontInput{
+  width: 150px;
+  height: 30px;
+  font-size: 1rem;
+  margin-top: 15%;
+}
+
+#colorInput{
+  width: 150px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+#audio{
+  width: 150px;
+  height: 20px;
+  font-size: 1rem;
 }
