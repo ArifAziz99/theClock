@@ -35,3 +35,23 @@ colorInput.addEventListener('input', () =>{
 let changingFontStyle = function (fontstyle) {
   document.getElementById("clock").style.fontFamily = fontstyle.value;
 }
+
+
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+
+
+
+// Function to change the text color based on the selected color
+function changeTextColor() {
+  const textElement = document.getElementById('clock');
+  const colorPicker = document.getElementById('colorPicker');
+  textElement.style.color = colorPicker.value;
+}
+
+// Add event listener to the color picker
+document.getElementById('colorPicker').addEventListener('input', changeTextColor);

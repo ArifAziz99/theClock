@@ -15,67 +15,86 @@
    
   </head>
   <body>
-		  <div id = "clock" onload="currentTime()"></div>
-      <div>
-        <select id="input" class="fontInput" onchange="changingFontStyle(this);">
-          <option value="sans-serif" selected="selected">sans-serif</option>
-          <option value="Azonix">Azonix</option>
-          <option value="TrenchThin">TrenchThin</option>
-          <option value="Digital7Mono">Digital7Mono</option>
-          <option value="OrdinaryLove">OrdinaryLove</option>
-          <option value="PegHoles">PegHoles</option>
-          <option value="chintzy">Chintzy</option>
-          <option value="chintzys">Chintzys</option>
-          <option value="DOTMATRI">DOTMATRI</option>
-          <option value="DOTMBold">DOTMBold</option>
-          <option value="DS-DIGIB">DS-DIGIB</option>
-          <option value="DS-DIGI">DS-DIGI</option>
-          <option value="MINECRAFTPE">MINECRAFT PE</option>
-          <option value="Sparks">Sparks</option>
-          <option value="Okesip">Okesip</option>
-          <option value="Roller">Roller</option>
-          <option value="Sextape">Sextape</option>
-          <option value="RitaOfCascia">RitaOfCascia</option>
-          <option value="Mockery">Mockery</option>
-          <option value="HocusPocusFilled">HocusPocusFilled</option>
-          <option value="HocusPocusHollow">HocusPocusHollow</option>
-          <option value="HocusPocus">HocusPocus</option>
-          <option value="Storycan">Storycan</option>
-          <option value="Showthat">Showthat</option>
-          <option value="BroshkLime">BroshkLime</option>
-          <option value="Pasti">Pasti</option>
-          <option value="Library3am">Library3am</option>
-          <option value="DigitaltsLime">DigitaltsLime</option>
-          <option value="Digitaltech">Digitaltech</option>
-          <option value="InflammableAge">Inflammable Age</option>
-          <option value="DignityofLabour">Dignity of Labour</option>
-          <option value="Minisystem">Minisystem</option>
-          <option value="HokjesgeestCubeLeft">HokjesgeestCubeLeft</option>
-          <option value="HokjesgeestCubeRight">HokjesgeestCubeRight</option>
-          <option value="McGareyRegular">McGareyRegular</option>
-          <option value="Oslo">Oslo</option>
-          <option value="Oslo_Bold">Oslo Bold</option>
-          <option value="Segment14">Segment14</option>
-          <option value="ninepin">ninepin</option>
-          <option value="HartingPlain">Harting Plain</option>
-          <option value="LCD14">LCD14</option>
-          <option value="Taurus-Mono-Outline">Taurus-Mono-Outline</option>
-          <option value="AmericanStencil">AmericanStencil</option>
-          <option value="software_tester_7">software_tester_7</option>
-          <option value="Dotrice">Dotrice-Regular</option>
-          <option value="repet">repet _</option>
-          <option value="UbuntuMono-R">UbuntuMono-R</option>
-          <option value="gabriele-d">gabriele-d</option>
-          <option value="zig">zig</option>
-          <option value="origa">origa</option>
-          <option value="origap">origap</option>
-          <option value="micrenc">micrenc</option>
-          <option value="saxmono">saxmono</option>
-          <option value="Hack">Hack</option>
-          <option value="FiraMono">FiraMono</option>
-        </select>
+      <nav class="navbar">
+
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+
+      <div class="navbar-links">
+        <ul>
+          <li> <div>
+            <select id="input" class="fontInput" onchange="changingFontStyle(this);">
+              <option value="sans-serif" selected="selected">sans-serif</option>
+              <option value="Azonix">Azonix</option>
+              <option value="TrenchThin">TrenchThin</option>
+              <option value="Digital7Mono">Digital7Mono</option>
+              <option value="OrdinaryLove">OrdinaryLove</option>
+              <option value="PegHoles">PegHoles</option>
+              <option value="chintzy">Chintzy</option>
+              <option value="chintzys">Chintzys</option>
+              <option value="DOTMATRI">DOTMATRI</option>
+              <option value="DOTMBold">DOTMBold</option>
+              <option value="DS-DIGIB">DS-DIGIB</option>
+              <option value="DS-DIGI">DS-DIGI</option>
+              <option value="MINECRAFTPE">MINECRAFT PE</option>
+              <option value="Sparks">Sparks</option>
+              <option value="Okesip">Okesip</option>
+              <option value="Roller">Roller</option>
+              <option value="Sextape">Sextape</option>
+              <option value="RitaOfCascia">RitaOfCascia</option>
+              <option value="Mockery">Mockery</option>
+              <option value="HocusPocusFilled">HocusPocusFilled</option>
+              <option value="HocusPocusHollow">HocusPocusHollow</option>
+              <option value="HocusPocus">HocusPocus</option>
+              <option value="Storycan">Storycan</option>
+              <option value="Showthat">Showthat</option>
+              <option value="BroshkLime">BroshkLime</option>
+              <option value="Pasti">Pasti</option>
+              <option value="Library3am">Library3am</option>
+              <option value="DigitaltsLime">DigitaltsLime</option>
+              <option value="Digitaltech">Digitaltech</option>
+              <option value="InflammableAge">Inflammable Age</option>
+              <option value="DignityofLabour">Dignity of Labour</option>
+              <option value="Minisystem">Minisystem</option>
+              <option value="HokjesgeestCubeLeft">HokjesgeestCubeLeft</option>
+              <option value="HokjesgeestCubeRight">HokjesgeestCubeRight</option>
+              <option value="McGareyRegular">McGareyRegular</option>
+              <option value="Oslo">Oslo</option>
+              <option value="Oslo_Bold">Oslo Bold</option>
+              <option value="Segment14">Segment14</option>
+              <option value="ninepin">ninepin</option>
+              <option value="HartingPlain">Harting Plain</option>
+              <option value="LCD14">LCD14</option>
+              <option value="Taurus-Mono-Outline">Taurus-Mono-Outline</option>
+              <option value="AmericanStencil">AmericanStencil</option>
+              <option value="software_tester_7">software_tester_7</option>
+              <option value="Dotrice">Dotrice-Regular</option>
+              <option value="repet">repet _</option>
+              <option value="UbuntuMono-R">UbuntuMono-R</option>
+              <option value="gabriele-d">gabriele-d</option>
+              <option value="zig">zig</option>
+              <option value="origa">origa</option>
+              <option value="origap">origap</option>
+              <option value="micrenc">micrenc</option>
+              <option value="saxmono">saxmono</option>
+              <option value="Hack">Hack</option>
+              <option value="FiraMono">FiraMono</option>
+            </select>
+          </div></li>
+
+          <li><input id="colorInput" type="color"></li>
+          
+          <li><input id="colorPicker" type="color"></li>
+
+          <li><audio id="audio" controls loop src="ticking-clock_1-27477.mp3"></li>
+        </ul>
       </div>
-      <input id="colorInput" type="color">
-		  <audio id="audio" controls loop src="ticking-clock_1-27477.mp3">
+      </nav>
+
+      <div id = "clock" onload="currentTime()"></div>
+      
  </body>
 </html>
