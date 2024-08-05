@@ -1,6 +1,6 @@
 {
-"name" : "clokc",
-"short_name" : "clokc",
+"name" : "clock",
+"short_name" : "clock",
 "description": "digital clock", 
 "start_url" : "/?home=true",
 "theme_color" : "#000000",
