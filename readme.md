@@ -1,7 +1,12 @@
+![Screenshot 3](https://github.com/user-attachments/assets/821b02fe-9c61-4bf8-be68-c03290e5a734)
+
 # Overview
 
 A sleek, user-friendly digital clock that displays hours, minutes, and blinking seconds, with a variety of customization features.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3b70b563cfb0b29f5cdde034d235f1f6f27789fe
 
 # Key Features
 
