@@ -9,6 +9,7 @@
 "theme_color" : "#000000",
 "background_color" : "#ffffff",
 "display" : "fullscreen",
+"display_override": ["window-controls-overlay"],
  "icons": [
     {
       "src": " asset/alarm-clock.svg",
