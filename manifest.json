@@ -4,7 +4,7 @@
 "description": "digital clock", 
 "start_url" : "/?home=true",
 "theme_color" : "#000000",
-"background_color" : "#000000",
+"background_color" : "#ffffff",
 "display" : "fullscreen",
  "icons": [
     {
