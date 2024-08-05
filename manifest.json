@@ -2,9 +2,12 @@
 "name" : "clock",
 "short_name" : "clock",
 "description": "digital clock", 
+"id": "https://theclock.online",
 "start_url" : "/?home=true",
+"orientation": "portrait",
+"scope":"https://theclock.online",
 "theme_color" : "#000000",
-"background_color" : "#ffffff",
+"background_color" : "#000000",
 "display" : "fullscreen",
  "icons": [
     {
@@ -58,5 +61,15 @@
       "sizes": "512x512",
       "purpose": "maskable"
     }
- ]
+ ],
+
+
+"screenshots" : [
+  {
+    "src": "screenshot.jpg",
+    "sizes": "1280x720",
+    "type": "image/jpg",
+    "platform": "wide"
+  }
+]
 }
