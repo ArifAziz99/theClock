@@ -22,6 +22,7 @@
    
   </head>
   <body>
+    
       <nav class="navbar">
 
         <a href="#" class="toggle-button">
@@ -102,6 +103,12 @@
       </nav>
 
       <div id = "clock" onload="currentTime()"></div>
+      
+      <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+          navigator.serviceWorker.register('sw.js')
+        }
+      </script>
       
  </body>
 </html>

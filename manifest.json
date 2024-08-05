@@ -1,14 +1,16 @@
 {
-"name" : "clokc",
+"name" : "clock",
+"short_name": "clock",
 "start_url" : "/?home=true",
 "theme_color" : "#000000",
-"background_color" : "#FFFFFF",
+"background_color" : "#000000",
 "display" : "fullscreen",
  "icons": [
     {
       "src": " alarm-clock.svg",
       "type": "image/svg+xml",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
     }
  ]
 }
