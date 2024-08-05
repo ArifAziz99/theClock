@@ -3,7 +3,7 @@
 "short_name" : "clock",
 "description": "digital clock", 
 "id": "https://theclock.online",
-"start_url" : "/?home=true",
+"start_url" : "https://theclock.online",
 "orientation": "portrait",
 "scope":"https://theclock.online",
 "theme_color" : "#000000",
