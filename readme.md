@@ -1,8 +1,8 @@
 # Overview
 
-A sleek, user-friendly digital clock that displays hours, minutes, and blinking seconds. With a variety of customization features, including font style, font color, background color or  tik-tok sound.
+A sleek, user-friendly digital clock that displays hours, minutes, and blinking seconds. With a variety of customization features, including font style, font color, background color and tik-tok sound.
 
-![alt text](alarm-clock-1.png)
+
 
 # Key Features
 
@@ -13,7 +13,7 @@ A sleek, user-friendly digital clock that displays hours, minutes, and blinking 
 
 # How To Use
 
-Toggle the menu options on the top-right corner and change font style, font color, background color or sound.
+Toggle the menu options on the top-right corner and choose font style, font color, background color or sound.
 
 # How To Install
 
