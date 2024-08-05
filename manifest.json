@@ -62,17 +62,7 @@
       "sizes": "512x512",
       "purpose": "maskable"
     }
- ],
-
-
-"screenshots" : [
-  {
-    "src": "screenshot.jpg",
-    "sizes": "1280x720",
-    "type": "image/jpg",
-    "platform": "wide"
-  }
-]
+ ]
 }
 
 
