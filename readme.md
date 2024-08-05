@@ -1,7 +1,6 @@
 # Overview
 
-A sleek, user-friendly digital clock that displays hours, minutes, and blinking seconds. With a variety of customization features, including font style, font color, font size, background color and tik-tok sound.
-
+A sleek, user-friendly digital clock that displays hours, minutes, and blinking seconds, with a variety of customization features.
 [pic here]
 
 # Key Features
