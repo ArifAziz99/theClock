@@ -8,10 +8,55 @@
 "display" : "fullscreen",
  "icons": [
     {
-      "src": " alarm-clock.svg",
+      "src": " asset/alarm-clock.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": " asset/alarm-clock.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": " asset/alarm-clock.svg",
       "type": "image/svg+xml",
       "sizes": "512x512",
       "purpose": "any"
+    },
+    {
+      "src": " asset/alarm-clock.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    
+
+
+    {
+      "src": " asset/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": " asset/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": " asset/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": " asset/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
  ]
 }
