@@ -3,10 +3,6 @@
 # Overview
 
 A sleek, user-friendly digital clock that displays hours, minutes, and blinking seconds, with a variety of customization features.
-<<<<<<< HEAD
-
-=======
->>>>>>> 3b70b563cfb0b29f5cdde034d235f1f6f27789fe
 
 # Key Features
 
