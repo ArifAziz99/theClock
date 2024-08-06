@@ -4,7 +4,7 @@
 "description": "digital clock", 
 "id": "https://theclock.online",
 "start_url" : "/?home=true",
-"orientation": "portrait",
+"orientation": "any",
 "scope":"https://theclock.online",
 "theme_color" : "#000000",
 "background_color" : "#ffffff",
