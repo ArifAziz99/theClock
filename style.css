@@ -298,8 +298,8 @@ body::-webkit-scrollbar {
 }
 
 .toggle-button .bar{
-  height: 1px;
-  width: 100%;
+  height: 3px;
+  width: 15%;
   background-color: white;
   border-radius: 10px;
 }
@@ -316,7 +316,7 @@ body::-webkit-scrollbar {
 
 .navbar-links.active{
   display: flex;
-  margin:1.5em;
+  margin:1em;
   width: 90px;
   height: 110px;
   background: rgba(53, 72, 97, 0.26);
