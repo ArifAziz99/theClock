@@ -244,8 +244,10 @@ body::-webkit-scrollbar {
 .fontInput{
   width: 150px;
   height: 30px;
+  border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+  background-color: #ffffff00;
 }
 
 #colorInput{
@@ -253,6 +255,7 @@ body::-webkit-scrollbar {
   height: 30px;
   font-size: 1rem;
   cursor: pointer;
+  background-color: #ffffff00;
 }
 
 #audio{
@@ -266,6 +269,15 @@ body::-webkit-scrollbar {
   height: 30px;
   font-size: 1rem;
   cursor: pointer;
+  background-color: #ffffff00;
+}
+
+#colorPicker:hover, #colorInput:hover, .fontInput:hover {
+  width: 150px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ffffff46;
 }
 
 .navbar-links ul{
@@ -277,7 +289,7 @@ body::-webkit-scrollbar {
 .navbar-links li{
   list-style: none;
   text-align: center;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 .navbar-links div, input, audio{
@@ -318,11 +330,11 @@ body::-webkit-scrollbar {
   display: flex;
   margin:1em;
   width: 90px;
-  height: 110px;
+  height: 145px;
   background: rgba(53, 72, 97, 0.26);
   padding-left: 3em;
   padding-right: 3em;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
   border-radius: 1em;
   position:absolute;
   z-index: 1;
@@ -333,8 +345,7 @@ body::-webkit-scrollbar {
 }
 
 
-
-
+/* title bar of the browser immersive mode */
 .titleBar {
   position: fixed;
   left: env(titlebar-area-x, 0);
@@ -342,4 +353,39 @@ body::-webkit-scrollbar {
   width: env(titlebar-area-width, 100%);
   height: env(titlebar-area-height, 40px);
   -webkit-app-region: drag;
+}
+
+
+/* size slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: 9px;
+  width: 150px;
+  border-radius: 100px;
+}
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animation: 0.2s;
+  background: #0044ff;
+  border-radius: 25px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 20px;
+  width: 40px;
+  border-radius: 7px;
+  background: #ffffff96;
+  backdrop-filter: blur(1px);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+
+input[type="range"]:hover::-webkit-slider-runnable-track {
+  background: #6a2cfc;
 }

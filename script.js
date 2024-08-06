@@ -55,3 +55,12 @@ function changeTextColor() {
 
 // Add event listener to the color picker
 document.getElementById('colorPicker').addEventListener('input', changeTextColor);
+
+
+
+//font size slider
+
+
+ document.getElementById('slider').addEventListener('input', function() {
+            document.getElementById('clock').style.fontSize = this.value + 'px';
+        });
