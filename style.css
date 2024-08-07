@@ -242,7 +242,7 @@ font-size: 0;
   width: fit-content;
   height: fit-content;
   margin: auto;
-  font-size: 8rem;
+  font-size: 12rem;
   z-index: -1;
 }
 
@@ -394,3 +394,12 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]:hover::-webkit-slider-runnable-track {
   background: #6a2cfc;
 }
+
+/* clock responsive media */
+
+@media screen and (max-width: 550px) {
+  #clock{
+   font-size: 7rem;
+     }
+ }
+ 
