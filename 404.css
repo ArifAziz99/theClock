@@ -1,76 +1,79 @@
 body {
-  background: rgb(37, 37, 37);
-  text-align: center;
-  overflow-y: scroll;
+    background: rgb(37, 37, 37);
+    text-align: center;
+    overflow-y: scroll;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+img{
+   width: 20vh; 
 }
+  h1{
+    color: rgb(255, 67, 67); 
+    font-size: 7vh;
+  }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-img {
-  width: 20vh;
-}
-h1 {
-  color: rgb(255, 67, 67);
-  font-size: 7vh;
-}
+  h2{
+    color: rgb(224, 135, 0);
+    font-size: 6vh;
+    padding-bottom: 1em;
+  }
 
-h2 {
-  color: rgb(224, 135, 0);
-  font-size: 6vh;
-  padding-bottom: 1em;
-}
-
-a {
-  color: rgb(255, 255, 255);
-  background-color: rgb(37, 75, 146);
-  font-size: 3vh;
-  padding: 1em;
-  text-decoration: none;
-  border-radius: 20px;
-}
-
-a:hover {
-  color: rgb(0, 0, 0);
-  background-color: rgb(91, 176, 255);
-  border-color: rgb(0, 0, 0);
-  cursor: pointer;
-}
-
-@media screen and (min-height: 1100px) {
-  h1,
-  h2 {
+  a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 75, 146);
     font-size: 3vh;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 20px;
   }
-}
 
-@media screen and (min-height: 1100px) {
-  a {
-    font-size: 1.5vh;
+  a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(91, 176, 255);
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
   }
-}
 
-@media screen and (min-height: 1100px) {
-  img {
-    width: 15vh;
+  @media screen and (min-height: 1100px) {
+   h1, h2{
+          font-size: 3vh;
+          
+      }
   }
-}
+  
+  @media screen and (min-height: 1100px) {
+    a{
+           font-size: 1.5vh;
+       }
+   }
+   
 
-@media screen and (max-height: 200px) {
-  h1,
-  h2 {
-    font-size: 15px;
-  }
-}
+  @media screen and (min-height: 1100px) {
+    img{
+        width: 15vh;           
+       }
+   }
 
-@media screen and (max-height: 200px) {
-  a {
-    font-size: 8px;
-  }
-}
-
-@media screen and (max-height: 200px) {
-  img {
-    width: 80px;
-  }
-}
+    @media screen and (max-height: 200px) {
+        h1, h2{
+               font-size: 15px;
+               
+           }
+       }
+       
+       @media screen and (max-height: 200px) {
+         a{
+                font-size: 8px;
+            }
+        }
+        
+     
+       @media screen and (max-height: 200px) {
+         img{
+             width: 80px;           
+            }
+        }
+        
