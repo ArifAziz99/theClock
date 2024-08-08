@@ -246,6 +246,20 @@ font-size: 0;
   z-index: -1;
 }
 
+.blinking {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+      visibility: visible;
+  }
+  50% {
+      visibility: hidden;
+  }
+}
+
+
 .fontInput{
   width: 150px;
   height: 30px;

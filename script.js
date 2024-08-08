@@ -1,23 +1,12 @@
-let clock = document.querySelector('#clock');
-
-function getTime() {
-  return new Date().toLocaleTimeString('en-US', 
-     { hour12: false, hour: 'numeric', minute: 'numeric' }).toString();
-}
-
 function setTime() {
-  let time = getTime();
-  // check if the colon is there
-  if (clock.innerText.split(':').length === 1) {
-    // if it's not, set the actual time
-    clock.innerText = time;
-  } else {
-    // if it is, remove the colon
-    clock.innerText = time.split(':').join(' ');
-  }
+  const clockElement = document.getElementById('clock');
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  clockElement.innerHTML = `${hours}<span class="blinking">${':'}</span>${minutes}`;
 }
 
-setInterval( setTime , 1000);
+setInterval(setTime, 1000);
 setTime();
 
 
@@ -45,7 +34,6 @@ toggleButton.addEventListener('click', () => {
 })
 
 
-
 // Function to change the text color based on the selected color
 function changeTextColor() {
   const textElement = document.getElementById('clock');
@@ -53,14 +41,12 @@ function changeTextColor() {
   textElement.style.color = colorPicker.value;
 }
 
+
 // Add event listener to the color picker
 document.getElementById('colorPicker').addEventListener('input', changeTextColor);
 
 
-
 //font size slider
-
-
  document.getElementById('slider').addEventListener('input', function() {
             document.getElementById('clock').style.fontSize = this.value + 'px';
         });
