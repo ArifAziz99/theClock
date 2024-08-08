@@ -1,7 +1,7 @@
 {
-"name" : "clock",
-"short_name" : "clock",
-"description": "digital clock", 
+"name" : "Clock",
+"short_name" : "Clock",
+"description": "Online Digital Clock", 
 "id": "https://theclock.online",
 "start_url" : "https://theclock.online",
 "orientation": "any",
