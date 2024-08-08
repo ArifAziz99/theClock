@@ -26,7 +26,7 @@ Open a browser and go to the clock website
 
 ## On Mobile
 A popup will be displayed to install the clock on your mobile,
-if not, then click on the three dot menu on the top-right, then click add to home screen, the install.
+if not, then click on the three dot menu on the top-right, then click add to home screen, then install.
 
 ## On Desktop
 An install icon will appear on top of the browser at the end of the search bar, click it to install it on your desktop.
