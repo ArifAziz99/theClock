@@ -11,6 +11,8 @@ A sleek, user-friendly digital clock that displays hours, minutes, and blinking 
 + font color
 + background color
 + sound
++ 
+![Screenshot 2024-08-08 143339](https://github.com/user-attachments/assets/63e3aa53-67ca-4b7a-8ed6-e01748163b77)
 
 # How To Use
 
