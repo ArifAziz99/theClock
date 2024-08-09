@@ -235,6 +235,11 @@ color: #ff000000;
 font-size: 0;
 }
 
+h2{
+  color: #ff000000;
+  font-size: 0;
+  }
+
 #clock {
   color: white;
   position: fixed;
