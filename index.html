@@ -63,14 +63,8 @@
         <ul>
           <li>
             <div>
-              <select
-                id="input"
-                class="fontInput"
-                onchange="changingFontStyle(this);"
-              >
-                <option value="sans-serif" selected="selected">
-                  sans-serif
-                </option>
+              <select id="input" class="fontInput" onchange="changingFontStyle(this);">
+                <option value="sans-serif" selected="selected">sans-serif</option>
                 <option value="Azonix">Azonix</option>
                 <option value="TrenchThin">TrenchThin</option>
                 <option value="Digital7Mono">Digital7Mono</option>
@@ -103,9 +97,7 @@
                 <option value="DignityofLabour">Dignity of Labour</option>
                 <option value="Minisystem">Minisystem</option>
                 <option value="HokjesgeestCubeLeft">HokjesgeestCubeLeft</option>
-                <option value="HokjesgeestCubeRight">
-                  HokjesgeestCubeRight
-                </option>
+                <option value="HokjesgeestCubeRight">HokjesgeestCubeRight</option>
                 <option value="McGareyRegular">McGareyRegular</option>
                 <option value="Oslo">Oslo</option>
                 <option value="Oslo_Bold">Oslo Bold</option>
@@ -155,14 +147,14 @@
               src="asset/ticking-clock_1-27477.mp3"
             ></audio>
           </li>
-
-          <li id="about"><a href="#info-about" id="linkAbout">About</a></li>
+          <a href="#" class="toggle-button" aria-label="toggle-button">
+          <li id="about"><a href="#info-about" class="linkAbout" aria-label="linkAbout">About</a></li>
         </ul>
       </div>
     </nav>
 
     <div id="clock" onload="currentTime()"></div>
-
+<div class="toggleH1">
     <section id="info-about">
       <h1>Athestic, sleek, user-friendly digital clock.</h1>
     </section>
@@ -209,5 +201,6 @@
       and find out why it is the preferred choice for those who appreciate both
       style and simplicity in their timekeeping solutions.
     </p>
+  </div>
   </body>
 </html>

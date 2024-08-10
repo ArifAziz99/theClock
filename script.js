@@ -33,6 +33,12 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 
+const linkAbout = document.getElementsByClassName('linkAbout')[0]
+const toggleH1 = document.getElementsByClassName('toggleH1')[0]
+
+linkAbout.addEventListener('click', () => {
+  toggleH1.classList.toggle('active')
+})
 
 // Function to change the text color based on the selected color
 function changeTextColor() {
