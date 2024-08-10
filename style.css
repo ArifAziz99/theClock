@@ -226,6 +226,15 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.toggleH1{
+  display: none;
+}
+
+.toggleH1.active{ 
+  display: grid;
+  place-items: center;
+}
+
 h1{
 color: #ffffff;
 font-size: 24px;
@@ -236,31 +245,10 @@ max-width: 70vw;
 margin-inline: auto;
 padding: 2rem;
 border-radius: 1em;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.116);
 background: rgba(92, 92, 92, 0.26);
 backdrop-filter: blur(30px);
 }
-
-
-/* make it better later desktop tab sizes */
-@media screen and (min-height: 1000px) {
-  h1{
-    margin-top: 350%;
-     }
- }
-
- @media screen and (max-width: 500px) {
-  h1{
-    margin-top: 450%;
-     }
- }
-
- /* mobile devices */
- @media screen and (max-width: 400px) {
-  h1{
-    margin-top: 300%;
-     }
- }
-
 
 p{
   color: #ffffff;
@@ -271,6 +259,7 @@ p{
   max-width: 70vw;
   margin-inline: auto;
   border-radius: 1em;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.116);
   background: rgba(92, 92, 92, 0.26);
   backdrop-filter: blur(30px);
   }
@@ -339,7 +328,7 @@ p{
   background-color: #ffffff46;
 }
 
-#linkAbout{
+.linkAbout{
   color: white;
   font-weight: 800;
   text-decoration: none;
@@ -355,13 +344,13 @@ p{
   background-color: #ffffff23;
 }
 
-#linkAbout:hover{
+.linkAbout:hover{
   color: black;
   font-weight: 800;
   background-color: #ffffff46;
 }
 
-#linkAbout:active{
+.linkAbout:active{
 background-color: rgba(255, 255, 255, 0.116);
 }
 
@@ -423,7 +412,7 @@ background-color: rgba(255, 255, 255, 0.116);
   border-radius: 1em;
   position:fixed;
   z-index: 1;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   border: solid 2px transparent;
   background-clip: padding-box;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.1);
