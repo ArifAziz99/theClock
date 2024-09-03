@@ -217,7 +217,7 @@
 
 
 body {
-  background: rgb(108, 132, 254);
+  background: rgb(0, 0, 0);
   text-align: center;
   overflow-y: scroll;
 }
@@ -265,7 +265,7 @@ p{
   }
 
 #clock {
-  color: white;
+  color: rgb(103, 55, 215);
   position: fixed;
   inset: 0;
   width: fit-content;
