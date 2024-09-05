@@ -328,6 +328,12 @@ p{
   background-color: #ffffff46;
 }
 
+/* buyMeACoffee-btn */
+.bmc-btn-container{
+  transform: translate(28px);
+  margin-top: 4rem;
+}
+
 .linkAbout{
   color: white;
   font-weight: 800;
