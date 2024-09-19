@@ -378,6 +378,18 @@ background-color: rgba(255, 255, 255, 0.116);
   right: 1rem;
 }
 
+#settings-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.rotate {
+  transform: rotate(120deg);
+}
+
+.rotated {
+transform: rotate(120deg);
+}
+
 .toggle-button{
   position:fixed;
   top: .75rem;

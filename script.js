@@ -25,6 +25,9 @@ let changingFontStyle = function (fontstyle) {
   document.getElementById("clock").style.fontFamily = fontstyle.value;
 }
 
+document.getElementById("settings-icon").addEventListener("click", function() {
+  this.classList.toggle("rotated");  // Toggle the rotation class
+}); 
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
