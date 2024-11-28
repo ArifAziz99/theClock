@@ -2,7 +2,7 @@
 
 # Overview
 
-A sleek, user-friendly digital clock that displays hours, minutes, and blinking seconds, with a variety of customization features.
+A sleek, user-friendly digital clock, with a variety of customization features.
 
 # Key Features
 

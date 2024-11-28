@@ -325,24 +325,24 @@ p{
   height: 30px;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #ffffff46;
+  background-color: hsla(0, 0%, 100%, 0.275);
 }
 
 /* buyMeACoffee-btn */
 .bmc-btn-container{
   transform: translate(28px);
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .linkAbout{
-  color: white;
+ color: rgb(194, 194, 194);
   font-weight: 800;
   text-decoration: none;
   position: fixed;
-  left: 20px;
+  left: 15px;
   padding-bottom: 2.2rem;
   padding-top: 1rem;
-  width: 9.4rem;
+  width: 10rem;
   height: 0.1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer;
@@ -351,9 +351,9 @@ p{
 }
 
 .linkAbout:hover{
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: 800;
-  background-color: #ffffff46;
+  background-color: hsl(49, 100%, 50%);
 }
 
 .linkAbout:active{
@@ -369,7 +369,11 @@ background-color: rgba(255, 255, 255, 0.116);
 .navbar-links li{
   list-style: none;
   text-align: center;
-  padding: 1.2rem;
+ 
+/* it is padding given to li above */
+}
+#padding{
+padding: 3rem;
 }
 
 .navbar-links div, input, audio{
@@ -377,6 +381,19 @@ background-color: rgba(255, 255, 255, 0.116);
   position: absolute;
   right: 1rem;
 }
+
+#settings-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.rotate {
+  transform: rotate(120deg);
+}
+
+.rotated {
+transform: rotate(120deg);
+}
+
 
 .toggle-button{
   position:fixed;
@@ -410,7 +427,7 @@ background-color: rgba(255, 255, 255, 0.116);
   display: flex;
   margin:1.2em;
   width: 90px;
-  height: 190px;
+  height: 455px;
   background: rgba(211, 211, 211, 0.26);
   padding-left: 3em;
   padding-right: 3em;
@@ -451,7 +468,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   height: 12.8px;
   cursor: pointer;
   animation: 0.2s;
-  background: #0044ff;
+  background: #1b62fd;
   border-radius: 25px;
 }
 
@@ -467,7 +484,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]:hover::-webkit-slider-runnable-track {
-  background: #6a2cfc;
+  background: #fccf2c;
 }
 
 /* clock responsive media */
@@ -477,4 +494,26 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
    font-size: 7rem;
      }
  }
- 
+
+
+ .titleName{
+ color: rgb(194, 194, 194);
+  font-weight: 500;
+  text-decoration: none;
+  position: fixed;
+  left: 15px;
+  padding-bottom: 4.4rem;
+  padding-top: .6rem;
+  width: 10rem;
+  height: 0.4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #b7b7b723;
+}
+
+.titleName:hover{
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  background-color: hsla(0, 0%, 100%, 0.275);
+}
