@@ -265,7 +265,7 @@ p{
   }
 
 #clock {
-  color: rgb(103, 55, 215);
+  color: hsl(143, 45%, 55%);
   position: fixed;
   inset: 0;
   width: fit-content;
