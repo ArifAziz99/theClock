@@ -351,9 +351,9 @@ p{
 }
 
 .linkAbout:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 800;
-  background-color: hsl(49, 100%, 50%);
+  background-color: hsl(143, 45%, 55%);
 }
 
 .linkAbout:active{
@@ -484,7 +484,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]:hover::-webkit-slider-runnable-track {
-  background: #fccf2c;
+  background: hsl(143, 45%, 55%);
 }
 
 /* clock responsive media */
@@ -497,7 +497,7 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
 
 
  .titleName{
- color: rgb(194, 194, 194);
+ color: rgb(255, 255, 255);
   font-weight: 500;
   text-decoration: none;
   position: fixed;
@@ -513,7 +513,6 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
 }
 
 .titleName:hover{
-  color: rgb(0, 0, 0);
-  font-weight: 800;
+  color: rgb(255, 255, 255);
   background-color: hsla(0, 0%, 100%, 0.275);
 }
