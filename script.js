@@ -60,3 +60,27 @@ document.getElementById('colorPicker').addEventListener('input', changeTextColor
  document.getElementById('slider').addEventListener('input', function() {
             document.getElementById('clock').style.fontSize = this.value + 'px';
         });
+
+// background Image Picker
+const filePicker = document.getElementById('filePicker');
+        const resetButton = document.getElementById('resetButton');
+
+        filePicker.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                // Read the selected image file
+                reader.onload = (e) => {
+                    document.body.style.backgroundImage = `url(${e.target.result})`;
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+
+        resetButton.addEventListener('click', () => {
+            document.body.style.backgroundImage = "";
+            filePicker.value = ""; // Reset the file input
+        });
