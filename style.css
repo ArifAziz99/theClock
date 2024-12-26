@@ -272,7 +272,7 @@ p{
   }
 
 #clock {
-  color: hsl(143, 45%, 55%);
+  color: hsl(0, 0%, 100%);
   position: fixed;
   inset: 0;
   width: fit-content;
