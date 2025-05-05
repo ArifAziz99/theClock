@@ -73,7 +73,11 @@ const filePicker = document.getElementById('filePicker');
 
                 // Read the selected image file
                 reader.onload = (e) => {
-                    document.body.style.backgroundImage = `url(${e.target.result})`;
+                    if (typeof e.target.result === 'string') {
+                        document.body.style.backgroundImage = `url(${e.target.result})`;
+                    } else {
+                        console.error('Invalid file result format:', e.target.result);
+                    }
                 };
 
                 reader.readAsDataURL(file);
