@@ -81,11 +81,12 @@
     <script src="script.js" defer></script>
     <link rel="manifest" href="manifest.json" />
 
+  <script>navigator.serviceWorker.register("sw.js")</script> 
     <link rel="canonical" href="https://theclock.online" />
   </head>
 
   <body>
-    <nav class="navbar" id="glass">
+    <nav class="navbar">
       <a href="#" class="toggle-button" aria-label="toggle-button">
         <svg
           id="settings-icon"
@@ -203,7 +204,7 @@
                 <option value="AmericanStencil">AmericanStencil</option>
                 <option value="software_tester_7">software_tester_7</option>
                 <option value="Dotrice">Dotrice-Regular</option>
-                <option value="repet">repet _</option>
+                <option value="repet">repet</option>
                 <option value="UbuntuMono-R">UbuntuMono-R</option>
                 <option value="gabriele-d">gabriele-d</option>
                 <option value="zig">zig</option>
@@ -277,6 +278,9 @@
     </nav>
 
     <div id="clock" onload="currentTime()"></div>
+    <p id="swipeHint2" class="swipe-hint2"><----TOGGLE SETTINGS TO CHANGE FONT COLOR, BACKGROUNG COLOR, BACKGROUND IMAGE AND MORE</p>
+    <p id="swipeHint" class="swipe-hint">SCROLL OR SWIPE THE CLOCK TO CHANGE ITS FONT</p>
+
     <div class="toggleH1">
       <section id="info-about">
         <h1>Athestic, sleek, user-friendly digital clock.</h1>

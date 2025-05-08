@@ -1,3 +1,4 @@
+// clock
 function setTime() {
   const clockElement = document.getElementById('clock');
   const now = new Date();
@@ -9,18 +10,18 @@ function setTime() {
 setInterval(setTime, 1000);
 setTime();
 
-
+// service worker registration
 if ('serviceWorker' in navigator){
 navigator.serviceWorker.register('/sw.js');
 }
 
-
+// color picker
 let colorInput = document.getElementById('colorInput');
 colorInput.addEventListener('input', () =>{
   document.body.style.backgroundColor = colorInput.value;
 });
 
-
+// font style picker
 let changingFontStyle = function (fontstyle) {
   document.getElementById("clock").style.fontFamily = fontstyle.value;
 }
@@ -29,7 +30,7 @@ document.getElementById("settings-icon").addEventListener("click", function() {
   this.classList.toggle("rotated");  // Toggle the rotation class
 }); 
 
-
+// navbar toggle
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
@@ -37,6 +38,7 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 
+// about section toggle
 const linkAbout = document.getElementsByClassName('linkAbout')[0]
 const toggleH1 = document.getElementsByClassName('toggleH1')[0]
 
