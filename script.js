@@ -88,3 +88,55 @@ const filePicker = document.getElementById('filePicker');
             document.body.style.backgroundImage = "";
             filePicker.value = ""; // Reset the file input
         });
+
+// Font style change on scroll or drag
+const clock = document.getElementById("clock");
+
+// All your local font family names
+const fonts = [
+  "Azonix", "OpenSans", "TrenchThin", "Digital7Mono", "OrdinaryLove", "PegHoles", "chintzy",
+  "chintzys", "DOTMATRI", "DOTMBold", "DS-DIGIB", "DS-DIGI", "MINECRAFTPE", "Sparks",
+  "Okesip", "Roller", "Sextape", "RitaOfCascia", "Mockery", "HocusPocusFilled", "HocusPocusHollow",
+  "HocusPocus", "Storycan", "Showthat", "BroshkLime", "Pasti", "Library3am", "DigitaltsLime",
+  "Digitaltech", "InflammableAge", "DignityofLabour", "Minisystem", "HokjesgeestCubeLeft",
+  "HokjesgeestCubeRight", "McGareyRegular", "Oslo", "Oslo_Bold", "Segment14", "ninepin",
+  "HartingPlain", "LCD14", "Taurus-Mono-Outline", "AmericanStencil", "software_tester_7",
+  "Dotrice", "repet", "UbuntuMono-R", "gabriele-d", "zig", "origa", "origap", "micrenc",
+  "saxmono", "Hack", "FiraMono"
+];
+
+let fontIndex = 0;
+
+function updateClockFont() {
+  clock.style.fontFamily = `"${fonts[fontIndex]}"`;
+}
+
+// Scroll to change font
+clock.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  fontIndex = (fontIndex + (e.deltaY > 0 ? 1 : -1) + fonts.length) % fonts.length;
+  updateClockFont();
+});
+
+// Touch drag on mobile to change font
+let touchStartX = null;
+
+clock.addEventListener("touchstart", (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+
+clock.addEventListener("touchend", (e) => {
+  if (touchStartX !== null) {
+    const touchEndX = e.changedTouches[0].clientX;
+    const deltaX = touchEndX - touchStartX;
+
+    if (Math.abs(deltaX) > 30) {
+      fontIndex = (fontIndex + (deltaX > 0 ? 1 : -1) + fonts.length) % fonts.length;
+      updateClockFont();
+    }
+
+    touchStartX = null;
+  }
+});
+
+updateClockFont(); // Initialize font on load

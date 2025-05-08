@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "OpenSans";
+  src: url(font/OpenSans.ttf);
+}
+@font-face {
   font-family: "Azonix";
   src: url(font/Azonix.otf);
 }
@@ -221,7 +225,7 @@ body {
   text-align: center;
   overflow-y: scroll;
 /* bg cover image */
-  font-family: Arial, sans-serif;
+  font-family: Azonix, sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -272,7 +276,7 @@ p{
   }
 
 #clock {
-  color: hsl(0, 0%, 100%);
+  color: #f6d051;
   position: fixed;
   inset: 0;
   width: fit-content;
@@ -302,7 +306,7 @@ p{
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #ffffff00;
+  background-color: #ff000000;
 }
 
 #colorInput{
