@@ -138,3 +138,53 @@ clock.addEventListener("touchend", (e) => {
 });
 
 updateClockFont(); // Initialize font on load
+
+// Initialize Pickr
+// Font color picker
+const fontColorPickr = Pickr.create({
+  el: '#fontColorPicker',
+  theme: 'classic',
+  default: '#ffffff',
+  swatches: [
+    '#ffffff', '#000000', '#F44336', '#E91E63',
+    '#2196F3', '#4CAF50', '#FF9800', '#FFEB3B'
+  ],
+  components: {
+    preview: true,
+    opacity: true,
+    hue: true,
+    interaction: {
+      input: true,
+      save: true
+    }
+  }
+});
+
+// Background color picker
+const bgColorPickr = Pickr.create({
+  el: '#bgColorPicker',
+  theme: 'classic',
+  default: '#000000',
+  swatches: [
+    '#000000', '#ffffff', '#3F51B5', '#009688',
+    '#CDDC39', '#FF5722', '#795548', '#607D8B'
+  ],
+  components: {
+    preview: true,
+    opacity: true,
+    hue: true,
+    interaction: {
+      input: true,
+      save: true
+    }
+  }
+});
+
+// Apply selected colors
+fontColorPickr.on('change', (color) => {
+  document.getElementById('clock').style.color = color.toHEXA().toString();
+});
+
+bgColorPickr.on('change', (color) => {
+  document.body.style.backgroundColor = color.toHEXA().toString();
+});
