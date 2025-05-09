@@ -236,12 +236,12 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
-.toggleH1{
+/* toggle about */
+.toggleAbout{
   display: none;
 }
 
-.toggleH1.active{ 
+.toggleAbout.active{ 
   display: grid;
   place-items: center;
 }
@@ -306,7 +306,7 @@ p{
 
 /* swipe clock to chnage its font hint */
 .swipe-hint {
-  position: absolute;
+  position: fixed;
   font-family: PegHoles, sans-serif;
   top: 30vh;
   left: 50%;
@@ -320,8 +320,9 @@ p{
   animation: fadeOut 5s ease 3s forwards; /* wait 2s, fade out over 3s */
 }
 
+/* setting hint */
 .swipe-hint2 {
-  position: absolute;
+  position: fixed;
   font-family: PegHoles, sans-serif;
   top: 1vh;
   left: 50%;

@@ -40,10 +40,11 @@ toggleButton.addEventListener('click', () => {
 
 // about section toggle
 const linkAbout = document.getElementsByClassName('linkAbout')[0]
-const toggleH1 = document.getElementsByClassName('toggleH1')[0]
+const toggleAbout = document.getElementsByClassName('toggleAbout')[0]
+const closeIcon = linkAbout.querySelector('.close-icon');
 
 linkAbout.addEventListener('click', () => {
-  toggleH1.classList.toggle('active')
+  toggleAbout.classList.toggle('active')
 })
 
 // Function to change the text color based on the selected color
