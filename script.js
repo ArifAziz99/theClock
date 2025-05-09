@@ -11,24 +11,14 @@ setInterval(setTime, 1000);
 setTime();
 
 // service worker registration
-if ('serviceWorker' in navigator){
-navigator.serviceWorker.register('/sw.js');
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
 }
 
-// color picker
-let colorInput = document.getElementById('colorInput');
-colorInput.addEventListener('input', () =>{
-  document.body.style.backgroundColor = colorInput.value;
-});
-
-// font style picker
-let changingFontStyle = function (fontstyle) {
-  document.getElementById("clock").style.fontFamily = fontstyle.value;
-}
-
-document.getElementById("settings-icon").addEventListener("click", function() {
+// Toggle the rotation setting icon
+document.getElementById("settings-icon").addEventListener("click", function () {
   this.classList.toggle("rotated");  // Toggle the rotation class
-}); 
+});
 
 // navbar toggle
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
@@ -38,55 +28,64 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 
-// about section toggle
-const linkAbout = document.getElementsByClassName('linkAbout')[0]
-const toggleAbout = document.getElementsByClassName('toggleAbout')[0]
-const closeIcon = linkAbout.querySelector('.close-icon');
+// font style picker
+let changingFontStyle = function (fontstyle) {
+  document.getElementById("clock").style.fontFamily = fontstyle.value;
+}
 
-linkAbout.addEventListener('click', () => {
-  toggleAbout.classList.toggle('active')
-})
+// font size slider
+document.getElementById('slider').addEventListener('input', function () {
+  document.getElementById('clock').style.fontSize = this.value + 'px';
+});
 
-// Function to change the text color based on the selected color
+// text color picker
 function changeTextColor() {
   const textElement = document.getElementById('clock');
   const colorPicker = document.getElementById('colorPicker');
   textElement.style.color = colorPicker.value;
 }
 
-
 // Add event listener to the color picker
 document.getElementById('colorPicker').addEventListener('input', changeTextColor);
 
-
-//font size slider
- document.getElementById('slider').addEventListener('input', function() {
-            document.getElementById('clock').style.fontSize = this.value + 'px';
-        });
+// background color picker
+let colorInput = document.getElementById('colorInput');
+colorInput.addEventListener('input', () => {
+  document.body.style.backgroundColor = colorInput.value;
+});
 
 // background Image Picker
 const filePicker = document.getElementById('filePicker');
-        const resetButton = document.getElementById('resetButton');
+const resetButton = document.getElementById('resetButton');
 
-        filePicker.addEventListener('change', (event) => {
-            const file = event.target.files[0];
+filePicker.addEventListener('change', (event) => {
+  const file = event.target.files[0];
 
-            if (file) {
-                const reader = new FileReader();
+  if (file) {
+    const reader = new FileReader();
 
-                // Read the selected image file
-                reader.onload = (e) => {
-                  document.body.style.backgroundImage = `url(${e.target.result})`;
-                };
+    // Read the selected image file
+    reader.onload = (e) => {
+      document.body.style.backgroundImage = `url(${e.target.result})`;
+    };
 
-                reader.readAsDataURL(file);
-            }
-        });
+    reader.readAsDataURL(file);
+  }
+});
 
-        resetButton.addEventListener('click', () => {
-            document.body.style.backgroundImage = "";
-            filePicker.value = ""; // Reset the file input
-        });
+// reset background image
+resetButton.addEventListener('click', () => {
+  document.body.style.backgroundImage = "";
+  filePicker.value = ""; // Reset the file input
+});
+
+// about section toggle
+const linkAbout = document.getElementsByClassName('linkAbout')[0]
+const toggleAbout = document.getElementsByClassName('toggleAbout')[0]
+
+linkAbout.addEventListener('click', () => {
+  toggleAbout.classList.toggle('active')
+})
 
 // Font style change on scroll or drag
 const clock = document.getElementById("clock");
@@ -147,8 +146,10 @@ const fontColorPickr = Pickr.create({
   theme: 'classic',
   default: '#ffffff',
   swatches: [
-    '#ffffff', '#000000', '#F44336', '#E91E63',
-    '#2196F3', '#4CAF50', '#FF9800', '#FFEB3B'
+    '#000000', '#ffffff', '#F44336', '#E91E63',
+    '#2196F3', '#4CAF50', '#FF9800', '#FFEB3B',
+    '#9C27B0', '#673AB7', '#FF5722', '#795548',
+    '#607D8B', '#3F51B5', '#009688', '#CDDC39'
   ],
   components: {
     preview: true,
@@ -168,7 +169,9 @@ const bgColorPickr = Pickr.create({
   default: '#000000',
   swatches: [
     '#000000', '#ffffff', '#3F51B5', '#009688',
-    '#CDDC39', '#FF5722', '#795548', '#607D8B'
+    '#CDDC39', '#FF5722', '#795548', '#607D8B',
+    '#F44336', '#E91E63', '#2196F3', '#4CAF50',
+    '#FF9800', '#FFEB3B', '#9C27B0', '#673AB7'
   ],
   components: {
     preview: true,
@@ -177,6 +180,7 @@ const bgColorPickr = Pickr.create({
     interaction: {
       input: true,
       save: true
+      
     }
   }
 });
