@@ -273,7 +273,6 @@
   src: url(font/FiraMono.otf);
 }
 
-
 body {
   background: rgb(0, 0, 0);
   text-align: center;
@@ -492,7 +491,7 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
 
 /* bg img reset tray  */
 #resetButton {
-  color: #cecece;
+  color: #ffffff;
   position: absolute;
   width: 150px;
   height: 30px;
@@ -542,7 +541,7 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
   position: fixed;
   left: 15px;
   padding-bottom: 2.2rem;
-  padding-top: 1rem;
+  padding-top: 1.2rem;
   width: 10rem;
   height: 0.1rem;
   cursor: pointer;
@@ -638,7 +637,7 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
   color: white;
   flex-direction: column;
   transition: transform 0.8s ease;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .navbar-links ul {

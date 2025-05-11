@@ -45,9 +45,6 @@ function changeTextColor() {
   textElement.style.color = colorPicker.value;
 }
 
-// Add event listener to the color picker
-document.getElementById('colorPicker').addEventListener('input', changeTextColor);
-
 // background color picker
 let colorInput = document.getElementById('colorInput');
 colorInput.addEventListener('input', () => {
@@ -184,6 +181,10 @@ const bgColorPickr = Pickr.create({
     }
   }
 });
+
+
+// Add event listener to the color picker
+document.getElementById('colorPicker').addEventListener('input', changeTextColor);
 
 // Apply selected colors
 fontColorPickr.on('change', (color) => {
