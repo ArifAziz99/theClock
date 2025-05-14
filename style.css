@@ -726,7 +726,6 @@ audio {
   padding: 0.25rem 0.5rem;
   border-radius: 0.75rem; /* Equivalent to rounded-xl */
   margin: 0 0.25rem;
-  font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
   color: inherit;
@@ -735,4 +734,44 @@ audio {
 .my-watermark a:hover {
   text-decoration: none;
   background-color: #d4d4d4; /* Light hover effect */
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+/* our other app links */
+.other-apps {
+  font-size: 0.875rem; 
+  color: #9e9e9e;/* Tailwind's text-sm */
+  text-align: center;
+  padding-top: 1.5rem; /* Tailwind's pt-6 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem; /* Tailwind's gap-2 */
+
+  /* Responsive layout */
+  flex-wrap: wrap;
+}
+
+@media (min-width: 640px) {
+  .other-apps {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem; /* Tailwind's gap-6 */
+  }
+}
+
+.app-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.app-link:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  height: 1.25rem; /* Tailwind's h-5 */
 }
