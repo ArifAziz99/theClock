@@ -168,7 +168,7 @@ const bgColorPickr = Pickr.create({
     '#000000', '#ffffff', '#3F51B5', '#009688',
     '#CDDC39', '#FF5722', '#795548', '#607D8B',
     '#F44336', '#E91E63', '#2196F3', '#4CAF50',
-    '#FF9800', '#FFEB3B', '#9C27B0', '#673AB7'
+    '#FF9800', '#FFEB3B', '#FFBF52', '#673AB7'
   ],
   components: {
     preview: true,
