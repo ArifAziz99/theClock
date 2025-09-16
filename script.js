@@ -100,14 +100,42 @@ const fonts = [
   "saxmono", "Hack", "FiraMono"
 ];
 
+
+// let fontColorPicker = "#ffffff";
+
+// function updateClockColor() {
+//   textElement.style.color = `"${colors[fontColorPicker]}"`;
+// }
+ 
+
+// // arrowkey to change color
+// document.addEventListener("keydown", (e) => {
+//   if (e.key === "ArrowUp" || e.key === "ArrowRight") {
+//     fontColorPicker = (fontColorPicker + 1) % colors.length;
+//   } else if (e.key === "ArrowDown" || e.key === "ArrowLeft") {
+//     fontColorPicker = (fontColorPicker - 1 + colors.length) % colors.length;
+//   }
+// });
+
+
 let fontIndex = 0;
 
 function updateClockFont() {
   clock.style.fontFamily = `"${fonts[fontIndex]}"`;
 }
 
+// arrowkey to change font
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowUp" || e.key === "ArrowRight") {
+    fontIndex = (fontIndex + 1) % fonts.length;
+  } else if (e.key === "ArrowDown" || e.key === "ArrowLeft") {
+    fontIndex = (fontIndex - 1 + fonts.length) % fonts.length;
+  }
+  updateClockFont();
+});
+
 // Scroll to change font
-clock.addEventListener("wheel", (e) => {
+document.addEventListener("wheel", (e) => {
   e.preventDefault();
   fontIndex = (fontIndex + (e.deltaY > 0 ? 1 : -1) + fonts.length) % fonts.length;
   updateClockFont();
@@ -116,11 +144,11 @@ clock.addEventListener("wheel", (e) => {
 // Touch drag on mobile to change font
 let touchStartX = null;
 
-clock.addEventListener("touchstart", (e) => {
+document.addEventListener("touchstart", (e) => {
   touchStartX = e.touches[0].clientX;
 });
 
-clock.addEventListener("touchend", (e) => {
+document.addEventListener("touchend", (e) => {
   if (touchStartX !== null) {
     const touchEndX = e.changedTouches[0].clientX;
     const deltaX = touchEndX - touchStartX;
@@ -141,7 +169,7 @@ updateClockFont(); // Initialize font on load
 const fontColorPickr = Pickr.create({
   el: '#fontColorPicker',
   theme: 'classic',
-  default: '#ffffff',
+  default: '#CDDC39',
   swatches: [
     '#000000', '#ffffff', '#F44336', '#E91E63',
     '#2196F3', '#4CAF50', '#FF9800', '#FFEB3B',
