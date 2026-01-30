@@ -334,7 +334,9 @@ p {
 
 /* clock */
 #clock {
-  color: #CDDC39;
+  color: #ffffff;
+  /* letter-spacing: -1px; */
+  /* font-weight: bold; */
   position: fixed;
   inset: 0;
   width: fit-content;
