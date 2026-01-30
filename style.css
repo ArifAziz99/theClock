@@ -365,6 +365,22 @@ p {
   }
 }
 
+
+/* toggle blink  */
+#toggle-blink {
+  margin-block: 10px;
+  margin-top: 40px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ff000000;
+  color: white;
+}
+
+
+
 /* swipe clock to chnage its font hint */
 .swipe-hint {
   position: fixed;
@@ -777,3 +793,4 @@ audio {
 .icon {
   height: 1.25rem; /* Tailwind's h-5 */
 }
+

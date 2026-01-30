@@ -1,10 +1,22 @@
+// add toggle for blinking seconds
+const toggleBlink = document.getElementById('toggle-blink')
+
+let blinkEnabled = true;
+
+toggleBlink.addEventListener('click', () => {
+blinkEnabled = !blinkEnabled;
+toggleBlink.textContent = blinkEnabled ? "Turn Off" : "Turn On";
+})
+
 // clock
 function setTime() {
   const clockElement = document.getElementById('clock');
   const now = new Date();
   const hours = String(now.getHours()).padStart(2, '0');
   const minutes = String(now.getMinutes()).padStart(2, '0');
-  clockElement.innerHTML = `${hours}<span class="blinking">${':'}</span>${minutes}`;
+  clockElement.innerHTML = blinkEnabled
+  ? `${hours}<span class="blinking">${':'}</span>${minutes}`
+  : `${hours} ${minutes}`;
 }
 
 setInterval(setTime, 1000);
@@ -222,3 +234,24 @@ fontColorPickr.on('change', (color) => {
 bgColorPickr.on('change', (color) => {
   document.body.style.backgroundColor = color.toHEXA().toString();
 });
+
+
+// for session storage blink state
+// // add toggle for blinking seconds
+// const toggleBlink = document.getElementById('toggle-blink')
+
+// // add session storage 
+// let blink =sessionStorage.getItem('blink');
+// blink = blink === null ? true : blink === 'ture';
+// // let blink = true;
+
+// toggleBlink.textContent = blink ? "Turn Off" : "Turn On";
+
+// toggleBlink.addEventListener('click', () => {
+// blink = !blink;
+
+// sessionStorage.setItem('blink', blink)
+
+// toggleBlink.textContent = blink ? "Turn Off" : "Turn On";
+// // setTime();
+// })
