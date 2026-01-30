@@ -237,6 +237,7 @@ bgColorPickr.on('change', (color) => {
 
 
 // for session storage blink state
+
 // // add toggle for blinking seconds
 // const toggleBlink = document.getElementById('toggle-blink')
 
@@ -255,3 +256,36 @@ bgColorPickr.on('change', (color) => {
 // toggleBlink.textContent = blink ? "Turn Off" : "Turn On";
 // // setTime();
 // })
+
+
+
+// add date and day 
+function dateDay() {
+  const now = new Date();
+
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const dayName = days[now.getDay()];
+
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+  const date = String(now.getDate()).padStart(2, '0');
+
+  document.getElementById("day").textContent = dayName;
+  document.getElementById("date").textContent = `${year}-${month}-${date}`;
+  
+  
+}
+
+dateDay();
+
+// add toggle DateDay
+const toggleDateDay = document.getElementById('toggle-dateDay')
+
+let dateDayOn = true;
+
+toggleDateDay.addEventListener('click', () => {
+dateDayOn = !dateDayOn;
+document.getElementById("dateDay").style.display = dateDayOn ? "" : "none";
+toggleDateDay.textContent = dateDayOn ? "Turn Off" : "Turn On";
+dateDayOn.innerHTML = dateDay;
+})

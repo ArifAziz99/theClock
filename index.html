@@ -149,7 +149,12 @@
       <ul>
       <li>
         <div class="titleName">Toggle Secs</div>
-        <button id="toggle-blink">Turn Off</button></li>
+        <button id="toggle-blink">Turn Off</button>
+      </li>
+      <li>
+        <div class="titleName">Toggle DateDay</div>
+        <button id="toggle-dateDay">Turn Off</button>
+      </li>
         <div class="titleName">Font style</div>
         <li id="padding">
           <div>
@@ -268,7 +273,13 @@
     </div>
   </nav>
 
+<div id="container">
   <div id="clock" onload="currentTime()"></div>
+  <div id="dateDay">
+    <div class="date" id="date"></div>  
+    <div class="day" id="day"></div>
+  </div>
+</div>
   <p id="swipeHint2" class="swipe-hint2"><----TOGGLE SETTINGS TO CHANGE FONT COLOR, BACKGROUNG COLOR, BACKGROUND IMAGE
       AND MORE</p>
       <p id="swipeHint" class="swipe-hint">SCROLL OR SWIPE THE CLOCK TO CHANGE ITS FONT</p>

@@ -794,3 +794,47 @@ audio {
   height: 1.25rem; /* Tailwind's h-5 */
 }
 
+/* date */
+.date {
+  font-size: 1.2rem;
+  top: 50;
+  color: #929292;
+}
+
+/* day */
+.day {
+  font-size: 1.2rem;
+  color: #858585;
+}
+
+/*dateDay */
+#dateDay {
+position: fixed;
+display: flex;
+gap: 10px;
+margin-top: 30px;
+top: 50%;
+left: 50%;
+transform: translate(30px , 60px);
+}
+
+/* toggle DateDay */
+#toggle-dateDay {
+  margin-block: 10px;
+  margin-top: 40px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ff000000;
+  color: white;
+}
+
+/* #container{
+display: flex;
+gap: 10px;
+justify-content: center;
+align-items: center;
+
+} */
